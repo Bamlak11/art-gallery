@@ -6,14 +6,21 @@ import ArtworkForm from './components/ArtworkForm';
 import ArtworkData from './components/ArtworkData';
 import Navbar from './components/Navbar';
 
+
 function App() {
   const [artworks, setArtworks] = useState(ArtworkData);
 
   // Function to add new artwork
   const addArtwork = (newArtwork) => {
-    setArtworks([...artworks, newArtwork]);
-    
+    // Create a new artwork object
+    const artwork = {
+      id: artworks.length + 1, // Assuming each artwork has a unique id
+      ...newArtwork
+    };
+    // Update the artworks state with the new artwork
+    setArtworks([...artworks, artwork]);
   };
+
 
 
   return (
@@ -22,9 +29,10 @@ function App() {
       <div>
         <Navbar />
       </div>
+
       <Routes>
-        <Route path="/" element={<MainGallery artworks={ArtworkData} />} />
-        <Route path="/artist" element={<ArtistPage />} />
+        <Route path="/" element={<MainGallery artworks={ArtworkData}/>} />
+        <Route path="/artwork/:id" element={<ArtistPage artworks={artworks} />} />
         <Route path="/form" element={<ArtworkForm addArtwork={addArtwork} />} />
       </Routes>
     </Router>

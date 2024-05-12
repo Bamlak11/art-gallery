@@ -31,12 +31,12 @@ const ArtworkForm = ({ addArtwork }) => {
 
   return (
     <div className="flex min-h-screen items-center justify-center">
-      <div className="w-11/12 p-12 bg-white sm:w-8/12 md:w-1/2 lg:w-5/12 rounded-xl">
-        <h1 className="text-xl font-semibold flex justify-center">Add Artwork</h1>
+      <div className="w-11/12 p-12 bg-black sm:w-8/12 md:w-1/2 lg:w-5/12 rounded-xl">
+        <h1 className="text-xl font-semibold flex justify-center text-white">Add Artwork</h1>
 
         <form className="mt-6" onSubmit={handleSubmit}>
           
-          <label htmlFor="imageUrl" className="block text-xs font-semibold text-gray-600 uppercase">
+          <label htmlFor="imageUrl" className="block text-xs font-semibold text-white uppercase">
             Image URL
           </label>
           <input
@@ -50,7 +50,7 @@ const ArtworkForm = ({ addArtwork }) => {
             required
           />
 
-          <label htmlFor="artistName" className="block mt-4 text-xs font-semibold text-gray-600 uppercase">
+          <label htmlFor="artistName" className="block mt-4 text-xs font-semibold text-white uppercase">
             Artist Name
           </label>
           <input
@@ -64,7 +64,7 @@ const ArtworkForm = ({ addArtwork }) => {
             required
           />
 
-          <label htmlFor="description" className="block mt-4 text-xs font-semibold text-gray-600 uppercase">
+          <label htmlFor="description" className="block mt-4 text-xs font-semibold text-white uppercase">
             Description
           </label>
           <textarea
@@ -80,7 +80,7 @@ const ArtworkForm = ({ addArtwork }) => {
 
           <button
             type="submit"
-            className="w-full rounded-lg py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none"
+            className="w-full rounded-lg py-3 mt-6 font-medium tracking-widest text-white uppercase bg-gray-600 shadow-lg focus:outline-none hover:bg-gray-700 hover:shadow-none"
           >
             Add Artwork
           </button>
