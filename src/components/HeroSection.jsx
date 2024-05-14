@@ -3,7 +3,7 @@ import React from 'react'
 const HeroSection = () => {
   return (
     <div className="flex items-center">
-	<section className="w-full bg-cover bg-center py-40"  
+	<section className="w-full h-auto bg-cover bg-center py-[200px]"  
     style={{backgroundImage: "url('https://images.pexels.com/photos/732548/pexels-photo-732548.jpeg?auto=compress&cs=tinysrgb&w=800')"}}>
 		
         <div className="container mx-auto text-center text-white">

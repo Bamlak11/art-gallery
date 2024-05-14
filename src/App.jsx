@@ -31,7 +31,7 @@ function App() {
       </div>
 
       <Routes>
-        <Route path="/" element={<MainGallery artworks={ArtworkData}/>} />
+        <Route path="/" element={<MainGallery artworks={artworks}/>} />
         <Route path="/artwork/:id" element={<ArtistPage artworks={artworks} />} />
         <Route path="/form" element={<ArtworkForm addArtwork={addArtwork} />} />
       </Routes>

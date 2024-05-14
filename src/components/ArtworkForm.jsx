@@ -50,14 +50,14 @@ const ArtworkForm = ({ addArtwork }) => {
             required
           />
 
-          <label htmlFor="artistName" className="block mt-4 text-xs font-semibold text-white uppercase">
+          <label htmlFor="artist" className="block mt-4 text-xs font-semibold text-white uppercase">
             Artist Name
           </label>
           <input
-            id="artistName"
+            id="artist"
             type="text"
-            name="artistName"
-            value={formData.artistName}
+            name="artist"
+            value={formData.artist}
             onChange={handleChange}
             placeholder="John Doe"
             className="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
