@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
+// will show the details of each artwork
 const ArtistPage = ({ artworks }) => {
   // Get the artwork id from route params
   const { id } = useParams();

@@ -33,7 +33,7 @@ const ArtworkForm = ({ addArtwork }) => {
     <div className="flex min-h-screen items-center justify-center">
       <div className="w-11/12 p-12 bg-black sm:w-8/12 md:w-1/2 lg:w-5/12 rounded-xl">
         <h1 className="text-xl font-semibold flex justify-center text-white">Add Artwork</h1>
-
+          {/* form information */}
         <form className="mt-6" onSubmit={handleSubmit}>
           
           <label htmlFor="imageUrl" className="block text-xs font-semibold text-white uppercase">

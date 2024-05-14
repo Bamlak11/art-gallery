@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Featured = ({ artwork }) => {
-  // Define the data for your featured artworks
+  // featured artworks
   const featuredArtworks = [
     {
       id: 1,
@@ -19,7 +19,7 @@ const Featured = ({ artwork }) => {
   return (
     <div className="flex flex-col justify-center items-center lg:px-24 px-5">
       <h1 className="text-4xl font-semibold text-center lg:pt-8 pt-24 pb-10">Featured Gallery</h1>
-
+        {/* the artwork the user chooses will be featured here */}
       {artwork && (
         <div className="relative flex flex-col rounded-xl bg-gray-300 shadow-md m-8 p-4">
           <div className="relative mx-4 mt-4 h-50 w-60 overflow-hidden rounded-xl shadow-lg hover:scale-110">

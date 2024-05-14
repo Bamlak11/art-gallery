@@ -2,6 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
+	// hero section with image, discription, and button
     <div className="flex items-center">
 	<section className="w-full h-auto bg-cover bg-center py-[200px]"  
     style={{backgroundImage: "url('https://images.pexels.com/photos/732548/pexels-photo-732548.jpeg?auto=compress&cs=tinysrgb&w=800')"}}>

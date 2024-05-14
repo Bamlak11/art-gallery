@@ -20,7 +20,7 @@ const MainGallery = ({ artworks }) => {
       <h1 id="all-collection" className="text-4xl font-semibold text-center lg:pt-8 py-20">All Collection</h1>
 
       <div className="flex flex-wrap justify-center">
-        {/* Render artworks */}
+        {/* Render all artworks */}
         {artworks.map((artwork, index) => (
           <div key={index} className="flex rounded-xl bg-gray-300 shadow-md m-8 p-4">
             <div className="mx-4 mt-4 h-50 w-60 overflow-hidden rounded-xl shadow-lg hover:scale-110">

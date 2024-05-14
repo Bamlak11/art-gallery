@@ -1,5 +1,6 @@
 import React from 'react'
 
+// artwork data
 const ArtworkData = [
     {
       id: 1,
